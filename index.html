@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Druta Paribahan</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,500&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind & DaisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!-- header area -->
+    <header class="container w-[96%] lg:w-[82%]  max-w-[1180px] mx-auto mt-10">
+        <!-- Navigation menu -->
+        <div class="navbar justify-center p-0">
+            <div class="navbar-start">
+                <!-- Menu for small devices -->
+                <div class="dropdown block lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-[300px] bg-[#ffffff]">
+                        <a
+                            class="text-base text-[#131318] font-semibold p-2 text-center border-b-2 border-[#1313186b]">Home</a>
+                        <a
+                            class="text-base text-[#131318] font-semibold p-2 text-center border-b-2 border-[#131318]">About</a>
+                        <a class="text-base text-[#131318] font-semibold p-2 text-center border-b-2 border-[#131318]">Destination
+                        </a>
+                        <a
+                            class="text-base text-[#131318] font-semibold p-2 text-center border-b-2 border-[#131318]">Search</a>
+                    </ul>
+                </div>
+                <!-- Text Logo -->
+                <div>
+                    <h4 class="text-[#131318] font-extrabold text-[22px] lg:text-3xl">Druta-Ticket</h4>
+                </div>
+            </div>
+            <!-- Nav items for large devices -->
+            <div class="hidden lg:block text-center">
+                <nav class="text-[#424247] space-x-7 text[18px] w-96 ">
+                    <a class="text-color-primary cursor-pointer">Home</a>
+                    <a class="hover:text-color-primary cursor-pointer">About</a>
+                    <a class="hover:text-color-primary cursor-pointer">Destination</a>
+                    <a class="hover:text-color-primary cursor-pointer">Search</a>
+                </nav>
+            </div>
+            <!-- Nav end, search bar and button -->
+            <div class="navbar-end space-x-5">
+                <button class="btn btn-bg text-xl color-primary hover:text-color-primary font-semibold px-5">Bus <img
+                        src="./images/bus-icon.png" alt="Bus-icon"></button>
+            </div>
+        </div>
+
+        <!-- Banner area -->
+        <div class="w-full h-[550px] rounded-3xl space-y-5 bg-image flex flex-col justify-center items-center ">
+            <h1 class="text-[60px] font-extrabold text-white text-center">End-to-End Travel with <br><span class="color-primary">Druta Paribahan</span></h1>
+            <p class="text-xl w-[750px] text-white text-center">Embark on seamless journeys with Druta Paribahan, your trusted partner for end-to-end travel solutions. Experience comfort, reliability, and efficiency.</p>
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary text[23px] title-colors font-bold border-none">Buy Tickets
+            </button>
+        </div>
+        <div>
+            <div></div>
+        </div>
+    </header>
+    <main>
+        <section class="">
+            
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./js/utility.js">
+    </script>
+</body>
+
+</html>

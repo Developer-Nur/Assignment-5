@@ -1,0 +1,38 @@
+::selection{ 
+   color: rgb(29, 209, 0)
+}
+
+
+.font-inter{
+    font-family: "Inter", sans-serif;
+}
+
+.font-raleway{
+    font-family: "Raleway", sans-serif;
+}
+
+
+.color-primary{
+    color: rgb(29, 209, 0);
+}
+.title-colors{
+    color: rgb(3, 7, 18);
+}
+
+.accent-color{
+    color: rgba(3, 7, 18, 0.6);
+}
+.btn-bg {
+    background: rgba(29, 209, 0, 0.1);
+}
+.bg-primary{
+    background: rgb(29, 209, 0);
+    
+}
+
+.bg-image{
+    background-image: linear-gradient(190deg, rgba(3, 7, 18, 0.217),rgba(3, 7, 18, 0) 70%), url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
