@@ -1,38 +1,54 @@
-::selection{ 
-   color: rgb(29, 209, 0)
+::selection {
+    color: rgb(29, 209, 0)
 }
 
 
-.font-inter{
+.font-inter {
     font-family: "Inter", sans-serif;
 }
 
-.font-raleway{
+.font-raleway {
     font-family: "Raleway", sans-serif;
 }
 
+.font-roboto {
+    font-family: "Roboto", sans-serif;
+  }
 
-.color-primary{
-    color: rgb(29, 209, 0);
+.color-primary {
+    color: rgb(28, 209, 0);
 }
-.title-colors{
+
+.title-colors {
     color: rgb(3, 7, 18);
 }
 
-.accent-color{
+.accent-color {
     color: rgba(3, 7, 18, 0.6);
 }
+
 .btn-bg {
     background: rgba(29, 209, 0, 0.1);
 }
-.bg-primary{
+
+.bg-primary {
     background: rgb(29, 209, 0);
-    
+
 }
 
-.bg-image{
-    background-image: linear-gradient(190deg, rgba(3, 7, 18, 0.217),rgba(3, 7, 18, 0) 70%), url(../images/banner.png);
+.bg-image {
+    background-image: linear-gradient(190deg, rgba(3, 7, 18, 0.217), rgba(3, 7, 18, 0) 70%), url(../images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+.ticket-section-style {
+    border-top: 2px solid rgb(29, 209, 0);
+    border-radius: 88px 88px 0px 0px;
+    background: rgb(247, 248, 248);
+}
+
+/* .edmo {
+   background: #f2f1f1;
+} */

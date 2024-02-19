@@ -11,6 +11,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,500&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
 
     <!-- Tailwind & DaisyUi -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -21,7 +25,7 @@
 
 <body>
     <!-- header area -->
-    <header class="container w-[96%] lg:w-[82%]  max-w-[1180px] mx-auto mt-10">
+    <header  id="header-area" class="container w-[96%] lg:w-[82%]  max-w-[1180px] mx-auto mt-10">
         <!-- Navigation menu -->
         <div class="navbar justify-center p-0">
             <div class="navbar-start">
@@ -68,27 +72,322 @@
         </div>
 
         <!-- Banner area -->
-        <div class="w-full h-[550px] rounded-3xl space-y-5 bg-image flex flex-col justify-center items-center ">
-            <h1 class="text-[60px] font-extrabold text-white text-center">End-to-End Travel with <br><span class="color-primary">Druta Paribahan</span></h1>
-            <p class="text-xl w-[750px] text-white text-center">Embark on seamless journeys with Druta Paribahan, your trusted partner for end-to-end travel solutions. Experience comfort, reliability, and efficiency.</p>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary text[23px] title-colors font-bold border-none">Buy Tickets
+        <div class="w-full h-[550px] mt-8 rounded-[30px] space-y-5 bg-image flex flex-col justify-center items-center ">
+            <h1 class="text-[60px] font-extrabold text-white text-center font-raleway">End-to-End Travel with <br><span
+                    class="color-primary">Druta Paribahan</span></h1>
+            <p class="text-xl w-[750px] text-white text-center font-inter">Embark on seamless journeys with Druta
+                Paribahan, your trusted partner for end-to-end travel solutions. Experience comfort, reliability, and
+                efficiency.</p>
+            <button
+                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary text[23px] title-colors font-bold border-none font-raleway">Buy
+                Tickets
             </button>
         </div>
-        <div>
-            <div></div>
-        </div>
     </header>
-    <main>
-        <section class="">
-            
+    <!-- main content ares -->
+    <main id="main-content" class="container   mx-auto mt-10">
+        <!-- best offer area -->
+        <section id="to-hide" class="container mt-20 text-center w-[96%]  lg:w-[82%] max-w-[1180px] mx-auto">
+            <h2 class="text-5xl title-colors font-bold text-center font-raleway">Best offers for you</h2>
+            <div class="flex justify-between items-center gap-6">
+                <!-- discount 15% -->
+                <div
+                    class=" lg:w-1/2 flex justify-between gap-3 items-center bg-[#ffbf0f] rounded-lg p-10 mt-10 relative">
+                    <!-- left side of discount 15% -->
+                    <article class="space-y-2">
+                        <h2 class="text-[40px] font-black title-color font-inter">15% OFF </h2>
+                        <p class="text-[18px] font-[500] title-color font-inter">on your next purchase </p>
+                        <p class="text-[#03071280] text-[18px] font-[500] font-inter">use by January 2024</p>
+                    </article>
+                    <!-- right side of discount 15% -->
+                    <article>
+                        <h2 class="text-[32px] font-bold title-color font-raleway">NEW 15</h2>
+                        <p class="text-[#03071280] text-[18px] font-[500] font-inter">Coupon Cod</p>
+                    </article>
+                    <figure class="absolute top-0 lg:right-[200px]">
+                        <img src="./images/cupon-devider.png" alt="devider">
+                    </figure>
+                </div>
+                <!-- discount 20% -->
+                <div
+                    class=" lg:w-1/2 flex justify-between gap-3 items-center bg-[#f78c9c] rounded-lg p-10 mt-10 relative">
+                    <!-- left side of discount 15% -->
+                    <article class="space-y-2">
+                        <h2 class="text-[40px] font-black title-color font-inter">20% OFF </h2>
+                        <p class="text-[18px] font-[500] title-color font-inter">on your next purchase </p>
+                        <p class="text-[#03071280] text-[18px] font-[500] font-inter">use by January 2024</p>
+                    </article>
+                    <!-- right side of discount 15% -->
+                    <article>
+                        <h2 class="text-[32px] font-bold title-color font-raleway">Couple 20</h2>
+                        <p class="text-[#03071280] text-[18px] font-[500] font-inter">Coupon Cod</p>
+                    </article>
+                    <figure class="absolute top-0 lg:right-[220px]">
+                        <img src="./images/cupon-devider.png" alt="devider">
+                    </figure>
+                </div>
+            </div>
+            <button
+                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary text[23px] color-primary bg-white border-2 border-[#1dd100] font-bold  font-raleway rounded-lg mt-10">See
+                All Offers
+            </button>
         </section>
+
+        <!-- ticket area -->
+        <section  class="container mt-20 text-center ticket-section-style">
+            <div class="text-center w-[96%]  lg:w-[82%] max-w-[1180px] mx-auto mt-20">
+                <h2 class="text-5xl title-colors font-bold text-center font-raleway">Druta Paribahan</h2>
+                <p class="text-xl  accent-color text-center font-inter mt-8">
+                    Experience swift and safe travel with Druta Paribahan, your dependable partner for end-to-end
+                    transportation solutions. Comfort, reliability, and punctuality guaranteed.
+                </p>
+                <!-- ticket area -->
+                <div class="flex justify-between items-center bg-white px-10 rounded-lg mt-16">
+                    <div class="my-5 ">
+                        <!-- destination & ticket info -->
+                        <!-- top-section -->
+                        <section class="flex justify-between mb-8">
+                            <div class="flex justify-start items-center gap-6 text-left">
+                                <figure><img src="./images/bus-logo.png" alt="Bus-logo"></figure>
+                                <article>
+                                    <h3 class="font-raleway text-3xl font-bold">Greenline Paribahan</h3>
+                                    <p class="font-inter text-[18px] accent-color">Coach-009-WEB ! AC_Business </p>
+                                </article>
+                            </div>
+                            <div class="space-x-5">
+                                <button
+                                    class="btn btn-bg text-xl color-primary hover:text-color-primary font-[500] px-5">
+                                    <span id="available-seets">8</span>Seats left
+                                    <img src="./images/seat-green.png" alt="set-icon">
+                                </button>
+                            </div>
+                        </section>
+                        <!-- destination and time info  -->
+                        <div class="p-10 bg-[#f7f8f8] rounded-xl">
+                            <section class="font-raleway font-semibold accent-color">
+                                <div
+                                    class="flex justify-between items-center gap-6 text-left border-b-2 border-dotted pb-3 mb-5">
+                                    <p class="font-inter text-[18px] accent-color">Route</p>
+                                    <p class="font-inter text-[18px] title-color">Dhaka - Sylhet</p>
+                                </div>
+                                <div
+                                    class="flex justify-between items-center gap-6 text-left border-b-2 border-dotted pb-3 mb-5">
+                                    <p class="font-inter text-[18px] accent-color">Departure Time</p>
+                                    <p class="font-inter text-[18px] title-color">9:00 PM</p>
+                                </div>
+                                <div class="flex-col lg:flex-row justify-between items-center gap-6">
+                                    <button class="btn  font-inter text-base accent-color rounded-lg">Boarding Point
+                                        - Laxmipur
+                                    </button>
+                                    <button class="btn  font-inter text-base accent-color rounded-lg">Dropping Point
+                                        - Bogura
+                                    </button>
+                                    <button class="btn  font-inter text-base accent-color rounded-lg">Est. Time - 11
+                                        Hour
+                                    </button>
+                                </div>
+                            </section>
+                        </div>
+
+                    </div>
+                    <!-- ticket price -->
+                    <div class="flex flex-col items-center">
+                        <img src="./images/fare.png" alt="currency-logo">
+                        <article>
+                            <h2 class="text-[32px] font-bold title-color font-raleway">550 Taka</h2>
+                            <p class="text-[#03071280] text-[18px] font-[500] font-inter">Per Seat</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="mt-[-400px] ml-[900px]">
+                    <img src="./images/info-devider.png" alt="devider-logo">
+                </div>
+            </div>
+
+            <!-- seat selection area -->
+            <div
+                class="grid grid-cols-5 gap-7 items-start gap-0 bg-white rounded-lg text-center w-[96%]  lg:w-[82%] max-w-[1180px] mx-auto mt-3 p-5">
+                <!-- seta selection section left -->
+                <div class="text-left col-span-3 border-r-2 border-dotted pr-6 border-[#0307124d]">
+                    <!-- description -->
+                    <div>
+                        <h2 class="font-releway text-4xl title-color mb-3">Select Your Seat</h2>
+                        <div class="flex justify-between items-center border-y-2 border-dotted font-inter py-5">
+                            <button class="flex gap-3  text-[18px] accent-color"><img src="./images/seat-gray.png"
+                                    alt="seat-logo"> Available</button>
+                            <button class="flex gap-3  text-[18px] color-primary"><img
+                                    src="./images/seat-green-filled.png" alt="seat-logo"> Selected</button>
+                        </div>
+                    </div>
+                    <!-- seat map -->
+                    <div>
+                        <div class="my-7  w-full flex justify-end">
+                            <div class="bg-[#0307121a] w-40 rounded-lg p-2 flex justify-center">
+                                <img width="40px" src="./images/steering.png" alt="steering-logo">
+                            </div>
+                        </div>
+                        <div class="mt-5 grid grid-cols-2 gap-12">
+                            <div class="grid grid-cols-7 grid-rows-2 gap-3 ">
+                                <p class="day rounded-xl py-3 px-3  accent-color text-base text-center">A</p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer col-span-3 day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    A1
+                                </p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer col-span-3 day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    A2
+                                </p>
+                                <p class="day rounded-xl py-3 px-3  accent-color text-base text-center">B</p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer col-span-3 day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    B1
+                                </p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer col-span-3 day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    B2
+                                </p>
+                                <p class="day rounded-xl py-3 px-3  accent-color text-base text-center">C</p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer col-span-3 day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    C1
+                                </p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer col-span-3 day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    C2
+                                </p>
+                                <p class="day rounded-xl py-3 px-3  accent-color text-base text-center">D</p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer col-span-3 day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    D1
+                                </p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer col-span-3 day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    D2
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-2 grid-rows-2 gap-3">
+                                <p id="ticket-number"
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">A3
+                                </p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">A4
+                                </p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">B3
+                                </p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">B4
+                                </p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">C3
+                                </p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">C4
+                                </p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">D3
+                                </p>
+                                <p id="ticket-number"
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">D4
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- seta selection section right, price and form -->
+                <div class="font-inter col-span-2">
+                    <h2 class="font-releway text-4xl title-color mb-3 border-dotted border-b-2 pb-3">Select Your Seat
+                    </h2>
+                    <div id="ticket-summary" class="bg-[#f7f8f8] p-5">
+                        <!-- total price area -->
+                        <div
+                            class="flex justify-between items-center gap-6 text-left border-b-2 border-dotted pb-3 mb-5 ">
+                            <p class=" title-color font-inter text-[18px]">Seat <span id="seat-selected"
+                                    class="bg-primary rounded-sm text-white font-inter">0</span></p>
+                            <p class="font-inter text-[18px] title-color">Class</p>
+                            <p class="font-inter text-[18px] title-color">Price</p>
+                        </div>
+                        <div id="seat-setection" class="flex justify-between items-center gap-6 text-left pb-3 mb-5 font-inter text-[18px] accent-color">
+                            <p id="selected-seat-number"></p>
+                            <p id="selected-seat-class"></p>
+                            <p id="selected-seat-price"></p>
+                        </div>
+                        <hr>
+                        <div>
+                            <!-- total price -->
+                            <section class="flex justify-between mt-4">
+                                <h2 class="text-xl title-color font-[500]">Total Price</h2>
+                                <h2 class="text-xl title-color font-[500]">BDT <span id="total-price">0</span></h2>
+                            </section>
+                            <!-- Apply coupne -->
+                            <label class="flex justify-start gap-0 my-5">
+                                <input id="coupon" class="w-full bg-white p-5 rounded-lg" type="text"
+                                    placeholder="Have any coupon?">
+                                <button id="apply-coupon" onclick=""
+                                    class=" w-[80px] h-[40px] mt-3 ml-[-120px] bg-primary  rounded-xl text-white font-semibold font-inter">Apply</button>
+                            </label>
+                            <!-- Grand Total -->
+                            <section class="flex justify-between">
+                                <h2 class="text-xl title-color font-[500]">Total Price</h2>
+                                <h2 class="text-xl title-color font-[500]">BDT <span id="total-price">0</span></h2>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- form -->
+                    <div class="mt-5">
+                        <form class="text-left space-y-4" action="#">
+                            <label class="block" for="name">Passenger Name*</label>
+                            <input class="w-full bg-white p-3 rounded-lg border-2 border-solid border-[#0307121a]"
+                                type="text" placeholder="Enter your name">
+                            <label class="block" for="name">Phone Number*</label>
+                            <input class="w-full bg-white p-3 rounded-lg border-2 border-solid border-[#0307121a]"
+                                id="phone-number" type="number" placeholder="Enter your phone number" required>
+                            <label class="block" for="name">Email ID</label>
+                            <input class="w-full bg-white p-3 rounded-lg border-2 border-solid border-[#0307121a]"
+                                id="phone-number" type="email" placeholder="Enter your email id" ><br>
+                            <button id="form-submition" onclick="success()"
+                                class="w-full py-3 bg-primary rounded-xl font-raleway text-white font-extrabold hover:bg-[#1cd10067] hover:text-[#030712]"
+                                disabled>Next</button>
+                        </form>
+                        <!-- Terms and Conditions -->
+                        <div class="mt-7 flex justify-around items-center">
+                            <p class="font-inter text-base underline text-[#03071299]">Terms and Conditions</p>
+                            <p class="font-inter text-base underline text-[#03071299]">Cancellation Policy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
     </main>
-    <footer>
 
-    </footer>
+    <!-- ticket confirmation area -->
+    <section id="success-note" class="w-full font-roboto bg-[#b6b6b6] min-h-screen flex justify-center items-center hidden">
+        <div
+            class="w-[780px] h-[450px] py-10 px-10 space-y-5 rounded-md flex flex-col justify-center items-center bg-white">
+            <img src="./images/success.png" alt="confirmation-Logo">
+            <h2 class="text-2xl font-bold text-[#1dd100]">SUCCESS</h2>
 
-    <script src="./js/utility.js">
-    </script>
+            <article class="space-y-5">
+                <p class="text-xl font-[500] text-[#1c1c1c] text-center">Thank you for Booking Our Bus Seats. We are
+                    working
+                    hard to find the best service and deals for you.</p>
+                <p class="text-xl font-[300] text-[#4a4a4ab3] text-center">Shortly you will find a confirmation in
+                    your email.
+                </p>
+            </article>
+            <button class=" text-xl text-white bg-primary font-semibold rounded-3xl py-2 px-9">Continue
+            </button>
+        </div>
+    </section>
+    
+
+
+    <script src="./js/function.js"></script>
 </body>
 
 </html>
