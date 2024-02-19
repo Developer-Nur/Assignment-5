@@ -67,7 +67,7 @@ for (let index = 0; index < tickets.length; index++) {
         grandTotalElement.innerText = totalPrice;
         
 
-        // coupon
+        // coupon conditions
         document.getElementById('apply-coupon').addEventListener('click', function() {
             const couponInput = document.getElementById('coupon');
             const couponInputArea = document.getElementById('coupon-input-area')
