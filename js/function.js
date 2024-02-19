@@ -1,6 +1,8 @@
 const tickets = document.querySelectorAll('#ticket-number');
 let maxSelect = 0;
 const ticketPrice = 550;
+const discountNew15 = 0.15;
+const discountCouple20 = 0.20;
 const availableSeatsElement = document.getElementById('available-seets');
 const phoneNumberInput = document.getElementById('phone-number');
 const submitButton = document.getElementById('form-submition');
@@ -13,15 +15,11 @@ for (let index = 0; index < tickets.length; index++) {
             seats.classList.remove('bg-gray-50');
             seats.classList.add('bg-primary');
             maxSelect++;
-        } else if (seats.classList.contains("bg-primary")) {
-            seats.classList.remove("bg-primary");
-            seats.classList.add("bg-gray-50");
-            maxSelect--;
         }
         else if (maxSelect >= 4) {
             return;
         }
-        
+
         // total selected seats
         const seatPicked = document.getElementById('seat-selected')
         seatPicked.innerText = maxSelect;
@@ -30,7 +28,7 @@ for (let index = 0; index < tickets.length; index++) {
         availableSeatsElement.textContent = 8 - maxSelect;
 
         // number validation
-        phoneNumberInput.addEventListener('input', function() {
+        phoneNumberInput.addEventListener('input', function () {
             const phoneNumberValue = phoneNumberInput.value;
             if (!isNaN(phoneNumberValue) && parseInt(phoneNumberValue) > 0) {
                 submitButton.disabled = false;
@@ -42,26 +40,59 @@ for (let index = 0; index < tickets.length; index++) {
         // ticket summery 
         const seatNumber = seats.innerText;
         const ticketTitle = seatNumber
-        
+
         const ticketSummery = document.getElementById('ticket-summery');
         const h3 = document.createElement('h3');
         h3.innerText = ticketTitle
-        console.log(h3)
+
 
         const p = document.createElement('p');
-        p.innerText= 'Economoy'
+        p.innerText = 'Economoy'
 
         const h4 = document.createElement('h4');
-        h4.innerText= parseInt(ticketPrice)
+        h4.innerText = parseInt(ticketPrice)
 
         ticketSummery.appendChild(h3)
         ticketSummery.appendChild(p)
         ticketSummery.appendChild(h4)
 
-        // pricing calculation
-        
+        //pricing calculation
+        const price = ticketPrice
+        const totalPrice = price * maxSelect;
+        const priceElement = document.getElementById('total-price');
+        priceElement.innerText = totalPrice;
 
+        //grand total price 
+        const grandTotalElement = document.getElementById('grand-total-price')
+
+        
+        document.getElementById('apply-coupon').addEventListener('click', function() {
+            const couponInput = document.getElementById('coupon');
+            const couponInputValue = couponInput.value;
+            if(couponInputValue.toUpperCase() === "NEW 15"){
+               const  discountPrice = totalPrice * discountNew15;
+                const discountTotel = totalPrice - discountPrice;
+                grandTotalElement.innerText = parseFloat(discountTotel);
+                const discountNote = document.getElementById('discount-note-15')
+                discountNote.classList.remove('hidden')
+                console.log(discountNote)
+            }
+            else if (couponInputValue.toUpperCase() === "Couple 20"){
+                const  discountPrice = totalPrice * discountCouple20;
+                const discountTotel = totalPrice - discountPrice;
+                grandTotalElement.innerText = parseFloat(discountTotel);
+                const discountNote = document.getElementById('discount-note-20')
+                discountNote.classList.remove('hidden')
+                console.log(discountNote)
+            }
+
+            
+
+          });
+          
     });
+
+
 }
 
 

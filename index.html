@@ -25,7 +25,7 @@
 
 <body>
     <!-- header area -->
-    <header  id="header-area" class="container w-[96%] lg:w-[82%]  max-w-[1180px] mx-auto mt-10">
+    <header id="header-area" class="container w-[96%] lg:w-[82%]  max-w-[1180px] mx-auto mt-10">
         <!-- Navigation menu -->
         <div class="navbar justify-center p-0">
             <div class="navbar-start">
@@ -134,7 +134,7 @@
         </section>
 
         <!-- ticket area -->
-        <section  class="container mt-20 text-center ticket-section-style">
+        <section class="container mt-20 text-center ticket-section-style">
             <div class="text-center w-[96%]  lg:w-[82%] max-w-[1180px] mx-auto mt-20">
                 <h2 class="text-5xl title-colors font-bold text-center font-raleway">Druta Paribahan</h2>
                 <p class="text-xl  accent-color text-center font-inter mt-8">
@@ -267,28 +267,36 @@
                             </div>
                             <div class="grid grid-cols-2 grid-rows-2 gap-3">
                                 <p id="ticket-number"
-                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">A3
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    A3
                                 </p>
                                 <p id="ticket-number"
-                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">A4
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    A4
                                 </p>
                                 <p id="ticket-number"
-                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">B3
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    B3
                                 </p>
                                 <p id="ticket-number"
-                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">B4
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    B4
                                 </p>
                                 <p id="ticket-number"
-                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">C3
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    C3
                                 </p>
                                 <p id="ticket-number"
-                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">C4
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    C4
                                 </p>
                                 <p id="ticket-number"
-                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">D3
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    D3
                                 </p>
                                 <p id="ticket-number"
-                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">D4
+                                    class="cursor-pointer day rounded-xl py-3 px-3 bg-gray-50 accent-color text-base text-center">
+                                    D4
                                 </p>
 
                             </div>
@@ -309,8 +317,9 @@
                             <p class="font-inter text-[18px] title-color">Class</p>
                             <p class="font-inter text-[18px] title-color">Price</p>
                         </div>
-                        <div id="ticket-summery" class="grid grid-cols-3 justify-between items-center  gap-4  pb-3 mb-5 font-inter text-[18px] accent-color">
-                            
+                        <div id="ticket-summery"
+                            class="grid grid-cols-3 justify-between items-center  gap-4  pb-3 mb-5 font-inter text-[18px] accent-color">
+
                         </div>
                         <hr>
                         <div>
@@ -323,14 +332,20 @@
                             <label class="flex justify-start gap-0 my-5">
                                 <input id="coupon" class="w-full bg-white p-5 rounded-lg" type="text"
                                     placeholder="Have any coupon?">
-                                <button id="apply-coupon" onclick=""
+                                <button id="apply-coupon"
                                     class=" w-[80px] h-[40px] mt-3 ml-[-120px] bg-primary  rounded-xl text-white font-semibold font-inter">Apply</button>
                             </label>
                             <!-- Grand Total -->
-                            <section class="flex justify-between">
-                                <h2 class="text-xl title-color font-[500]">Total Price</h2>
-                                <h2 class="text-xl title-color font-[500]">BDT <span id="total-price">0</span></h2>
-                            </section>
+                            <div>
+                                <p id="discount-note-15" class="text-3xl color-primary font-extrabold text-center bg-gray-200 p-3 hidden">You got 15% discount</p>
+                                <p id="discount-note-20" class="text-3xl color-primary font-extrabold text-center bg-gray-200 p-3 hidden">You got 15% discount</p>
+                                <section class="flex justify-between">
+                                    <h2 class="text-xl title-color font-[500]">Grand Total</h2>
+                                    <h2 class="text-xl title-color font-[500]">BDT <span id="grand-total-price">0</span>
+                                    </h2>
+                                </section>
+                            </div>
+
                         </div>
                     </div>
                     <!-- form -->
@@ -344,7 +359,7 @@
                                 id="phone-number" type="number" placeholder="Enter your phone number" required>
                             <label class="block" for="name">Email ID</label>
                             <input class="w-full bg-white p-3 rounded-lg border-2 border-solid border-[#0307121a]"
-                                id="phone-number" type="email" placeholder="Enter your email id" ><br>
+                                id="phone-number" type="email" placeholder="Enter your email id"><br>
                             <button id="form-submition" onclick="success()"
                                 class="w-full py-3 bg-primary rounded-xl font-raleway text-white font-extrabold hover:bg-[#1cd10067] hover:text-[#030712]"
                                 disabled>Next</button>
@@ -359,12 +374,13 @@
             </div>
         </section>
 
-        
+
 
     </main>
 
     <!-- ticket confirmation area -->
-    <section id="success-note" class="w-full font-roboto bg-[#b6b6b6] min-h-screen flex justify-center items-center hidden">
+    <section id="success-note"
+        class="w-full font-roboto bg-[#b6b6b6] min-h-screen flex justify-center items-center hidden">
         <div
             class="w-[780px] h-[450px] py-10 px-10 space-y-5 rounded-md flex flex-col justify-center items-center bg-white">
             <img src="./images/success.png" alt="confirmation-Logo">
@@ -382,7 +398,7 @@
             </button>
         </div>
     </section>
-    
+
 
 
     <script src="./js/function.js"></script>
