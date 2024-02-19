@@ -16,7 +16,7 @@ for (let index = 0; index < tickets.length; index++) {
             seats.classList.add('bg-primary');
             maxSelect++;
         }
-        else if (maxSelect >= 4) {
+        else {
             return;
         }
 
@@ -69,15 +69,15 @@ for (let index = 0; index < tickets.length; index++) {
         document.getElementById('apply-coupon').addEventListener('click', function() {
             const couponInput = document.getElementById('coupon');
             const couponInputValue = couponInput.value;
-            if(couponInputValue.toUpperCase() === "NEW 15"){
+            if(couponInputValue === "NEW15"){
                const  discountPrice = totalPrice * discountNew15;
                 const discountTotel = totalPrice - discountPrice;
                 grandTotalElement.innerText = parseFloat(discountTotel);
                 const discountNote = document.getElementById('discount-note-15')
                 discountNote.classList.remove('hidden')
-                console.log(discountNote)
+                
             }
-            else if (couponInputValue.toUpperCase() === "Couple 20"){
+            else if (couponInputValue === "Couple 20"){
                 const  discountPrice = totalPrice * discountCouple20;
                 const discountTotel = totalPrice - discountPrice;
                 grandTotalElement.innerText = parseFloat(discountTotel);
@@ -86,6 +86,7 @@ for (let index = 0; index < tickets.length; index++) {
                 console.log(discountNote)
             }
 
+            // test
             
 
           });
