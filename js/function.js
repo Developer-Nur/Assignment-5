@@ -101,6 +101,7 @@ for (let index = 0; index < tickets.length; index++) {
 function success() {
     hideElement('main-content')
     hideElement('header-area')
+    hideElement('footer-area')
     showElement('success-note')
 }
 
