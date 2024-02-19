@@ -64,10 +64,11 @@ for (let index = 0; index < tickets.length; index++) {
 
         //grand total price 
         const grandTotalElement = document.getElementById('grand-total-price')
-
+        grandTotalElement.innerText = totalPrice;
         
         document.getElementById('apply-coupon').addEventListener('click', function() {
             const couponInput = document.getElementById('coupon');
+            const couponInputArea = document.getElementById('coupon-input-area')
             const couponInputValue = couponInput.value;
             if(couponInputValue === "NEW15"){
                const  discountPrice = totalPrice * discountNew15;
@@ -75,7 +76,7 @@ for (let index = 0; index < tickets.length; index++) {
                 grandTotalElement.innerText = parseFloat(discountTotel);
                 const discountNote = document.getElementById('discount-note-15')
                 discountNote.classList.remove('hidden')
-                
+                couponInputArea.classList.add('hidden')  
             }
             else if (couponInputValue === "Couple 20"){
                 const  discountPrice = totalPrice * discountCouple20;
@@ -84,15 +85,12 @@ for (let index = 0; index < tickets.length; index++) {
                 const discountNote = document.getElementById('discount-note-20')
                 discountNote.classList.remove('hidden')
                 console.log(discountNote)
+                couponInputArea.classList.add('hidden')
             }
-
-            // test
-            
 
           });
           
     });
-
 
 }
 
