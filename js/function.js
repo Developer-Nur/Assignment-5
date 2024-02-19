@@ -21,10 +21,7 @@ for (let index = 0; index < tickets.length; index++) {
         else if (maxSelect >= 4) {
             return;
         }
-        // seat Number
-        const seatNumber = seats.innerText;
-        console.log(seatNumber)
-
+        
         // total selected seats
         const seatPicked = document.getElementById('seat-selected')
         seatPicked.innerText = maxSelect;
@@ -42,10 +39,27 @@ for (let index = 0; index < tickets.length; index++) {
             }
         });
 
+        // ticket summery 
+        const seatNumber = seats.innerText;
+        const ticketTitle = seatNumber
         
+        const ticketSummery = document.getElementById('ticket-summery');
+        const h3 = document.createElement('h3');
+        h3.innerText = ticketTitle
+        console.log(h3)
 
+        const p = document.createElement('p');
+        p.innerText= 'Economoy'
 
+        const h4 = document.createElement('h4');
+        h4.innerText= parseInt(ticketPrice)
 
+        ticketSummery.appendChild(h3)
+        ticketSummery.appendChild(p)
+        ticketSummery.appendChild(h4)
+
+        // pricing calculation
+        
 
     });
 }
